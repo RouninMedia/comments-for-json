@@ -102,7 +102,7 @@ myData = removeComments(myData);
 standardJSON = JSON.stringify(myData);
 
 console.log(commentedJSON);
-// ["##1 THIS IS COMMENT 1",{"##2 THIS IS COMMENT 2":[],"The":["quick","##3 This is Comment 3","brown","##4 This is Comment 4","fox"]},["jumps"],"over","##5 This is Comment 5","the",{"lazy":"dog"}]
+// ["##1 THIS IS COMMENT 1",{"##2 THIS IS COMMENT 2":[],"The":["quick","##3 This is Comment 3","brown","##4 This is Comment 4","fox"]},["jumps"],"over","##5 This is Comment 5","the",{"lazy":"dog", "##6 This is Comment 6": "This can be any value"}]
 
 console.log(standardJSON);
 // [{"The":["quick","brown","fox"]},["jumps"],"over","the",{"lazy":"dog"}]
