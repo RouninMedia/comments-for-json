@@ -1,6 +1,53 @@
 # Symbol-prefixed Comments for JSON
 An approach which enables *symbol-prefixed comments* to be included in `JSON` data and then removed before the `JSON` data is parsed or processed.
 
+_______
+
+## Step 1: Adding Comments
+
+In this approach, comments are prefixed by `comment`-markers, analagous to `//` in javascript, which indicate that the remainder of the entry is a comment.
+
+The default `comment`-marker is `##` but may be customised to be *any* string of *any* length.
+
+# Example of JSON with symbol-prefixed Comments:
+
+```json
+[
+  "##1 THIS IS COMMENT 1",
+
+  {
+    "##2 THIS IS COMMENT 2": [],
+    "The": [
+      "quick",
+      "##3 This is Comment 3",
+      "brown",
+      "##4 This is Comment 4",
+      "fox"
+    ]
+  },
+
+  ["jumps"],
+  "over",
+  "##5 This is Comment 5",
+  "the",
+  {
+    "lazy": "dog",
+    "##6 This is Comment 6": "This can be any value"
+  }
+]
+```
+
+There are ***four*** things to note from the example above:
+
+ - in the context of *array-notation*, comments will be written in *string-notation* (e.g. `"## This is a comment"`)
+ - in the context of *object-notation*, comments will be written in *key-value-notation* (e.g. `"## This is a comment": []`)
+ - in the context of *object-notation*, comments are always written into the *key* and never written into the *value* 
+ - in the context of *object-notation*, the *value* which follows a *comment-key* can be *anything*
+
+_______
+
+## Step 2: Removing Comments
+
 ```js
 const removeComments = (myData, commentSyntax = '##') => {
 
