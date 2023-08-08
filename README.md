@@ -41,7 +41,7 @@ There are ***four*** things to note from the example above:
 
  - in the context of *array-notation*, comments will be written as *strings*: `"## This is a comment"`
  - in the context of *object-notation*, comments will be written in *key-value* notation: `"## This is a comment": "This can be any value"`
- - in the context of *object-notation*, comments are always written into the *key* and never written into the *value* 
+ - in the context of *object-notation*, comments are always written into the *key* and not the *value* 
  - in the context of *object-notation*, the *value* which follows a *comment-key* can be *anything*
 
 _______
