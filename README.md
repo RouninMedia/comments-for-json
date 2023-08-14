@@ -9,7 +9,7 @@ In this approach, comments are prefixed by `comment`-markers, analagous to `//` 
 
 The default `comment`-marker is `##` but may be customised to be *any* character-string of *any* length.
 
-# Example of JSON with symbol-prefixed Comments:
+# Example of JSON with character-prefixed Comments:
 
 ```json
 [
