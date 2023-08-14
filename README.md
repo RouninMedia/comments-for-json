@@ -1,5 +1,5 @@
-# Symbol-prefixed Comments for JSON
-An approach which enables *symbol-prefixed comments* to be included in `JSON` data and then removed before the `JSON` data is parsed or processed.
+# Character-prefixed Comments for JSON
+An approach which enables *character-prefixed comments* to be included in `JSON` data and then removed before the `JSON` data is parsed or processed.
 
 _______
 
@@ -7,7 +7,7 @@ _______
 
 In this approach, comments are prefixed by `comment`-markers, analagous to `//` in javascript, which indicate that the remainder of the entry is a comment.
 
-The default `comment`-marker is `##` but may be customised to be *any* string of *any* length.
+The default `comment`-marker is `##` but may be customised to be *any* character-string of *any* length.
 
 # Example of JSON with symbol-prefixed Comments:
 
