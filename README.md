@@ -7,7 +7,7 @@ _______
 
 In this approach, comments are prefixed by `comment`-markers, analagous to `//` in javascript, which indicate that the remainder of the entry is a comment.
 
-The default `comment`-marker is `##` but may be customised to be *any* character-string of *any* length.
+The default `comment`-marker is **`##`** but may be customised to be *any* character-string of *any* length.
 
 # Example of JSON with character-prefixed Comments:
 
